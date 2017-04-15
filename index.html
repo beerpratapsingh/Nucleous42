@@ -4,9 +4,10 @@
 	<title>Nucleus 42</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css">
+	<link rel="stylesheet" type="text/css" href="css/select2.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.3/css/bootstrap-slider.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	 <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -60,7 +61,7 @@
 				<div class="col-md-2">
 					<h5>Locations</h5>
 					<div class="form-group">
-						<input class="inpt form-control" type="text" placeholder="Search Loacations">
+						<input class="inpt form-control" type="text" id="location" placeholder="Search Loacations">
 					</div>
 					<h6>Trending Cities</h6>
 					<ul>
@@ -158,27 +159,33 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h6>Total Funding Raised</h6>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="selcet-warp">
-										<div class="form-group">
-											<input class="form-control" type="text" value="$0">
-										</div>						
-										<div class="form-group">
-											<input class="form-control" type="text" value="$100">
-										</div>															
+							<div class="selcet-warp">
+								<div class="form-group">
+									<div class="input-group">
+									  	<span class="input-group-addon" id="slide-left-btn">$</span>
+									  	<input type="text" class="slide-left form-control" value="0" aria-describedby="slide-left-btn" disabled>
 									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="form-group">
-										<input class="btn btn-danger form-control" type="reset" value="Reset">
+								</div>						
+								<div class="form-group">
+									<div class="input-group">
+									  	<span class="input-group-addon" id="slide-right-btn">$</span>
+									  	<input type="text" class="slide-right form-control" value="100" aria-describedby="slide-right-btn" disabled>
+
 									</div>
-								</div>
+								</div>			
+								<div class="form-group">
+									<div class="input-group">
+										<label><a class="reset-slider" href="javascript:;">Reset</a></label>
+									</div>
+								</div>		
 							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<input id="ex2" class="range-slider" type="text" class="span2" value="120,1000" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" data-value="120,1000" style="">
-								</div>
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+									<input type="text" style="width: 100% !important;" class="form-control range-slider span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="[0,100]" data-slider-tooltip="hide"/>
 							</div>
 						</div>
 					</div>
@@ -436,7 +443,10 @@
 	
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
- 	<script type="text/javascript" src="js/bootstrap-slider.min.js"></script> 	
- 	<script type="text/javascript" src="js/script.js"></script>
+ 	<script type="text/javascript" src="js/data-dump.js"></script>
+ 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.3/bootstrap-slider.min.js"></script>
+ 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 	<script type="text/javascript" src="js/select2.min.js"></script>
+ 	<script type="text/javascript" src="js/script.js" async></script>
 </body>
 </html>
