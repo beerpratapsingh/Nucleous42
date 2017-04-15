@@ -18,7 +18,7 @@ $(function(){
 	$(".reset-slider").on("click", function(){
 		$(".slide-left").val(leftVal);
 		$(".slide-right").val(rightVal);
-		$(".range-slider").slider('setValue', [leftVal, rightVal]); 
+		$(".range-slider").bootstrapSlider('setValue', [leftVal, rightVal]); 
 	})
 
 	$( "#location" ).autocomplete({
