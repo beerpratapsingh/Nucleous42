@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0;}
+a{color: #464b4f; font-size: 15px;}
+.link{color: #36bfff;}
+p{font-size: 15px;}
+li{list-style: none;}
+h5{color: #454a4e; font-size: 18px;}
+h6 { color: #778995; font-size: 15px; font-weight: 600;}
+
+.n42-padding-top7{padding-top: 7px;}
+
+
+.n42nav{background: #fff;}
+.n42nav .navbar{margin-bottom: 0;}
+.n42nav .navbar-nav{margin: 15px 0;}
+.n42nav .nav li a{padding-top: 10px; padding-bottom: 10px;}
+.n42nav .nav li a:hover, .n42nav .nav li a:focus{color: #36bfff; background-color: transparent;}
+.n42nav .navbar-toggle .icon-bar { background-color: #0081cb;}
+
+.navbar-right > li > a{border: 2px solid transparent;}
+.navbar-right > li > a:hover, .navbar-right > li>a:focus, .navbar-right > li > a:hover{color: #36bfff; border: 2px solid; border-radius: 3px; background-color: transparent;}
+ 
+.n42-bnr {background: #7b8994; color: #fff; padding-bottom: 20px;}
+.n42-bnr h1:before{content: ''; width: 34px; height: 40px; display: inline-block; background: url(../images/company-icon.png) left top no-repeat; margin-right: 10px;}
+
+.srch-sec{position: relative;}
+.srch-sec .inpt{height: 60px; padding-left: 30px; border: none;}
+.srch-btn{width: 18px; height: 18px; background: url(../images/search-icon.png) left top no-repeat;
+    border: none; outline: none; position: absolute; top: 22px; left: 20px;}
+.clear-all{position: absolute; right: 25px; top: 20px;}    
+
+
+.n42-locations-src { background: #f6f7f9; border-top: 1px solid #dfe4e7; border-bottom: 1px solid #dfe4e7; padding: 15px 0;}   
+.n42-locations-src .col-md-2 + .col-md-2, .n42-locations-src .col-md-2 + .col-md-4{ border-left: 1px solid #dee3e7;}
+.n42-locations-src ul li a{color: #90979d;}
+.n42-locations-src ul li+li{margin-top: 6px;}
+
+.selcet-warp .form-group { display: inline-block; width: 48%; font-size: 13px;}
+.selcet-warp .form-group .form-control{font-size: 13px;}
+@media (max-width: 767px){
+	.n42nav .nav li a:hover, .n42nav .nav li a:focus{color: #36bfff; background-color: #f9f9f9;}
+	.n42nav .navbar {margin-bottom: 20px;}
+	.n42nav .navbar-toggle{top: 10px;}
+}
+
