@@ -51,7 +51,7 @@ h6 { color: #778995; font-size: 15px; font-weight: 600;}
 .company-logo{width: 38px; height: 38px; margin-right: 5px; border: 1px solid #dce5e4;}
 .company-logo img{width: 100%}
 .company-desc { width: 80%;}
-.company-sub-ttl{font-size: 13px; display: block;}
+.company-sub-ttl{font-size: 13px; display: block; width: 170px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .customize-column:before{content: ''; width: 20px; height: 15px; display: inline-block; vertical-align: middle; background: url(../images/plus-icon.png) left center no-repeat; margin-right: 2px;}
 .slider-arrows .prev-icon, .slider-arrows .next-icon{width: 35px; height: 34px; display: inline-block; background-image: url(../images/prev-next-arrow.png); background-repeat: no-repeat;}
 .slider-arrows ul,.slider-arrows ul li{display: inline-block;}
@@ -75,6 +75,8 @@ h6 { color: #778995; font-size: 15px; font-weight: 600;}
 
 
 @media (max-width: 767px){
+	.navbar-brand { padding-left: 0;}
+	button.navbar-toggle { margin-right: 0;}
 	.n42nav .nav li a:hover, .n42nav .nav li a:focus{color: #36bfff; background-color: #f9f9f9;}
 	.n42nav .navbar {margin-bottom: 20px;}
 	.n42nav .navbar-toggle{top: 10px;}
