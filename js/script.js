@@ -2,6 +2,9 @@ $(function(){
 	var leftVal = 0,
 		rightVal = 100;
 	// intialise slider
+
+	/*$(".range-slider").slider('setValue', [leftVal, rightVal]);*/
+
 	$(".range-slider").bootstrapSlider({
 		range: true, 
 		value: [leftVal, rightVal]
@@ -20,6 +23,10 @@ $(function(){
 
 	$( "#location" ).autocomplete({
       	source: _dbData.location
+    });
+
+    $( "#searchMarket" ).autocomplete({
+      	source: _dbData.market
     });
 
 })

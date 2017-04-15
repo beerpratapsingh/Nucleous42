@@ -39,13 +39,11 @@ h6 { color: #778995; font-size: 15px; font-weight: 600;}
 .selcet-warp .form-group .form-control{font-size: 13px;}
 .slider.slider-horizontal { width: 100%;}
 .slider-selection, .slider-track {height: 6px;  background: #bcc3c9;}
-.slider-handle.min-slider-handle.round , .slider-handle.max-slider-handle.round{
-    background: url(../images/slider-handler.png) left top no-repeat;
-    width: 12px;
-    height: 14px;
-    border-radius: 0 !important;
-    top: 3px;
-}
+.slider-handle.min-slider-handle.round , .slider-handle.max-slider-handle.round{ background: url(../images/slider-handler.png) left top no-repeat;
+    width: 12px; height: 14px; border-radius: 0 !important;  top: 3px;}
+.input-group-addon{background: #fff; border-right: none; padding-right: 0px;}
+.slide-left, .slide-right{background: #fff !important; border-left: none; padding-left: 0;box-shadow: none;}
+.reset-slider{ margin-top: 7px; display: inline-block;}
 
 
 /*.n42-companies-lst > .container > .row:first-child{background: #7b8994; color: #fff; padding: 10px; border-top-left-radius: 4px; border-top-right-radius: 4px;}*/
