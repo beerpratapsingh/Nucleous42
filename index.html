@@ -50,7 +50,7 @@
 	<div class="n42-srch-sec" id="searchSecton">
 		<div class="container srch-sec">
 			<button class="srch-btn"></button>
-			<input class="form-control inpt" type="text" placeholder="Enter a Keyword">
+			<input class="form-control inpt ui-autocomplete-input global-search" id="mainSearch" type="text" placeholder="Enter a Keyword">
 			<a class="clear-all" href="javascript:;">Clear All</a>
 		</div>
 	</div><!--End of Banner-->
@@ -78,7 +78,7 @@
 						<input class="inpt form-control" id="searchMarket" type="text" placeholder="Search Market">
 					</div>
 					<h6>Trending Markets</h6>
-					<ul>
+					<ul class="marketSrchVal">
 						<li><a href="javascript:;">E-Commerce</a></li>
 						<li><a href="javascript:;">Education</a></li>
 						<li><a href="javascript:;">Enterprise Software</a></li>
@@ -203,14 +203,239 @@
 	<div class="n42-companies-lst">
 		<div class="container">
 			<div class="slider-arrows text-right">
-				<a class="link customize-column" href="javascript:;">Customize Columns</a>
+				<div class="customize-column-wrap">
+					<a class="link customize-column" href="javascript:;">Customize Columns</a>
+					<div class="checkbox-cont text-left">
+						<a class="link close-btn" href="javascript:;">Close</a>
+
+						<div class="form-check">                                                    
+                          <input type="checkbox" id="locationckBox" name="type">
+                          <label for="locationckBox">Location</label>                    
+	                    </div>
+	                    <div class="form-check">                                                    
+                          <input type="checkbox" id="marketckBox" name="type">
+                          <label for="marketckBox">Market</label>                    
+	                    </div>
+	                    <div class="form-check">                                                    
+                          <input type="checkbox" id="webSiteckBox" name="type">
+                          <label for="webSiteckBox">WebSite</label>                    
+	                    </div>
+	                    <div class="form-check">                                                    
+                          <input type="checkbox" id="employeeckBox" name="type">
+                          <label for="employeeckBox">Employee</label>                    
+	                    </div>
+	                    <div class="form-check">                                                    
+                          <input type="checkbox" id="stageckBox" name="type">
+                          <label for="stageckBox">Stage</label>                    
+	                    </div>
+
+	                    <div class="form-check disabled">                                                    
+                          <input type="checkbox" id="tfund" name="type">
+                          <label for="tfund">Total Funding</label>                    
+	                    </div>
+	                    <div class="form-check disabled">                                                    
+                          <input type="checkbox" id="founder" name="type">
+                          <label for="founder">Founder</label>                    
+	                    </div>
+	                    <div class="form-check disabled">                                                    
+                          <input type="checkbox" id="lfund" name="type">
+                          <label for="lfund">Last Funding</label>                    
+	                    </div>
+	                    <div class="form-check disabled	">                                                    
+                          <input type="checkbox" id="lfDate" name="type">
+                          <label for="lfDate">Last Funding</label>                    
+	                    </div>
+					</div>
+				</div>
+
 				<ul>
 					<li><a class="prev-icon" href="javascript:;"></a></li>
 					<li><a class="next-icon" href="javascript:;"></a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="container">		
+
+		<div class="list-wrap container">
+			<div class="list-inline">
+				<div class="col"><strong>Company</strong></div>
+				<div class="col"><strong>Location</strong></div>
+				<div class="col"><strong>Market</strong></div>
+				<div class="col"><strong>Websites</strong></div>
+				<div class="col"><strong>Employee</strong></div>
+				<div class="col"><strong>Stage</strong></div>
+				<div class="col"><strong>Total Funding</strong></div>
+				<div class="col"><strong>Founder</strong></div>
+				<div class="col"><strong>Last Funding</strong></div>
+				<div class="col"><strong>Last Funding Date</strong></div>
+				<div class="col"><strong>Month Since Last Funding</strong></div>
+				<div class="col"><strong>Hass Mobile App</strong></div>
+			</div>
+
+			<div class="list-inline">
+				<div class="col">
+					<a href="javascript:;">
+						<div class="company-logo">
+							<img src="images/shopsence-logo.png">
+						</div>
+						<div class="company-desc">
+							<b class="company-ttl">Shopsence</b>
+							<span class="company-sub-ttl">In-Store Interactive technology &</span>	
+						</div>
+					</a>
+				</div>
+				<div class="col">Mumbai</div>
+				<div class="col"><p>E-Commerce, B2C, Internet Of Things, Retail</p></div>
+				<div class="col"><a class="link" href="javascript:;">Shopsence.co</a></div>
+				<div class="col">41</div>
+				<div class="col">Pre Series A</div>
+				<div class="col">Test</div>
+				<div class="col">Test1</div>
+				<div class="col">Test2</div>
+				<div class="col">Test3</div>
+			</div>
+
+			<div class="list-inline">
+				<div class="col">
+					<a href="javascript:;">
+						<div class="company-logo">
+							<img src="images/clairvolex-logo.png">
+						</div>
+						<div class="company-desc">
+							<b class="company-ttl">Clairvolex</b>
+							<span class="company-sub-ttl">Intelluctual Property Solutions<span>	
+						</div>
+					</a>
+				</div>
+				<div class="col">
+					Gurgaon
+				</div>
+				<div class="col">
+					<p>B2B, Legal</p>
+				</div>
+				<div class="col">
+					<a class="link" href="javascript:;">clairvolex.com</a>
+				</div>
+				<div class="col">
+					97
+				</div>
+				<div class="col">
+					Series A
+				</div>
+			</div>
+
+			<div class="list-inline">
+				<div class="col">
+					<a href="javascript:;">
+						<div class="company-logo">
+							<img src="images/ahataxis-logo.png">
+						</div>
+						<div class="company-desc">
+							<b class="company-ttl">Ahataxis</b>
+							<span class="company-sub-ttl">Inline Taxi Aggregator for One</span>	
+						</div>
+					</a>
+				</div>
+				<div class="col">
+					-
+				</div>
+				<div class="col"><p>B2C, Transportaion, E-Commerce, Travel</p></div>
+				<div class="col">
+					<a class="link" href="javascript:;">ahataxis.com</a>
+				</div>
+				<div class="col">
+					-
+				</div>
+				<div class="col">
+					Pre Series A
+				</div>
+			</div>
+
+
+			<div class="list-inline">
+				<div class="col">
+					<a href="javascript:;">
+						<div class="company-logo">
+							<img src="images/urbanclap-logo.png">
+						</div>
+						<div class="company-desc">
+							<b class="company-ttl">UrbanClap</b>
+							<span class="company-sub-ttl">Mobile-firt open marketplace for</span>	
+						</div>
+					</a>
+				</div>
+				<div class="col">
+					Delhi
+				</div>
+				<div class="col"><p>B2C, Transportaion, E-Commerce, Travel</p></div>
+				<div class="col">
+					<a class="link" href="javascript:;">urbanclap.com</a>
+				</div>
+				<div class="col">
+					188
+				</div>
+				<div class="col">
+					Pre Series A
+				</div>
+			</div>
+
+			<div class="list-inline">
+				<div class="col">
+					<a href="javascript:;">
+						<div class="company-logo">
+							<img src="images/pickrr-logo.png">
+						</div>
+						<div class="company-desc">
+							<b class="company-ttl">Pickrr</b>
+							<span class="company-sub-ttl">On Demand first mile courier</span>	
+						</div>
+					</a>
+				</div>
+				<div class="col">
+					New Delhi
+				</div>
+				<div class="col"><p>B2C, B2B</p></div>
+				<div class="col">
+					<a class="link" href="javascript:;">urbanclap.com</a>
+				</div>
+				<div class="col">
+					-
+				</div>
+				<div class="col">
+					Pre Series A
+				</div>
+			</div>
+
+			<div class="list-inline">
+				<div class="col">
+					<a href="javascript:;">
+						<div class="company-logo">
+							<img src="images/urbanclap-logo.png">
+						</div>
+						<div class="company-desc">
+							<b class="company-ttl">UrbanClap</b>
+							<span class="company-sub-ttl">Mobile-firt open marketplace for</span>	
+						</div>
+					</a>
+				</div>
+				<div class="col">
+					Delhi
+				</div>
+				<div class="col"><p>B2C, Transportaion, E-Commerce, Travel</p></div>
+				<div class="col">
+					<a class="link" href="javascript:;">urbanclap.com</a>
+				</div>
+				<div class="col">
+					188
+				</div>
+				<div class="col">
+					Pre Series A
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- <div class="container">		
 
 			<div class="row">
 				<div class="col-md-3">
@@ -247,9 +472,7 @@
 				<div class="col-md-2">
 					Mumbai
 				</div>
-				<div class="col-md-2">
-					E-Commerce, B2C, Internet Of Things, Retail
-				</div>
+				<div class="col-md-2">E-Commerce, B2C, Internet Of Things, Retail.</div>
 				<div class="col-md-2">
 					<a class="link" href="javascript:;">Shopsence.co</a>
 				</div>
@@ -405,7 +628,7 @@
 					Pre Series A
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="container">
 			<div class="rwo">
@@ -448,11 +671,11 @@
 	</footer><!--End of footer-->
 	
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
- 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
- 	<script type="text/javascript" src="js/data-dump.js"></script>
+ 	<script type="text/javascript" src="js/bootstrap.min.js"></script> 	
  	<script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
  	<script type="text/javascript" src="js/select2.min.js"></script>
+ 	<script type="text/javascript" src="js/data-dump.js"></script>
  	<script type="text/javascript" src="js/script.js" async></script>
 </body>
 </html>

@@ -2,9 +2,6 @@ $(function(){
 	var leftVal = 0,
 		rightVal = 100;
 	// intialise slider
-
-	/*$(".range-slider").slider('setValue', [leftVal, rightVal]);*/
-
 	$(".range-slider").bootstrapSlider({
 		range: true, 
 		value: [leftVal, rightVal]
@@ -27,6 +24,33 @@ $(function(){
 
     $( "#searchMarket" ).autocomplete({
       	source: _dbData.market
+    });
+
+    var concatArr =_dbData.location.concat(_dbData.market);     
+    $("#mainSearch").autocomplete({
+    	source: concatArr
+    });
+
+
+    $(".customize-column").on('click', function(){
+    	$(".checkbox-cont").show();
+    });
+    $(".close-btn").on('click', function(){
+    	$(".checkbox-cont").hide();
+    });
+
+    //$(".global-search").select2();
+    
+    $(".ui-autocomplete-input").keyup(function(){    	
+    	var slectedVal = $(this).val();
+    	
+    	$(".marketSrchVal li a").each(function(i){
+    		var myArr = [];
+    		//myArr.push[slectedVal];    		
+    	});
+    });
+    $.each(newcol,function(key,value){
+     //alert(key);
     });
 
 })
