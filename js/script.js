@@ -59,8 +59,9 @@ var n42 = {
 	    				if($('.srch-sec a#' +listText).length < 1)
 	    				$('.srch-sec').append('<a href="javascrtip:;" class="link close-lst" id="'+listText+'">' + listText + '<span class="remove">x</span>'+'</a>');	    				
 	    				$(".ui-autocomplete-input").val('');
+
 	    				var elewidth = $('.close-lst').outerWidth();	    				
-	    				$("#mainSearch").css('padding-left', elewidth+40);
+	    				$("#mainSearch").css('padding-left', '+=116');
 	    			}
 	    			$(this).addClass('active');
 	    		}else{
@@ -71,6 +72,7 @@ var n42 = {
 	    
 	    $(".locationSrchVal li  a, .marketSrchVal li a").on('click', function(){
 	    	$(this).removeClass('active');
+	    	$(".ui-autocomplete-input").val('');
 	    });
 
 
@@ -85,7 +87,7 @@ var n42 = {
 	    	var currVal = $(this).parent('a').attr('id');  	    	
 	    	$('ul>li>a:contains('+currVal+')').removeClass('active');
 	    	$(this).parent('.close-lst').remove();
-	    	$("#mainSearch").css('padding-left', 30);
+	    	$("#mainSearch").css('padding-left', '-=116');
 	    });
 
 	    //open customize check list 
