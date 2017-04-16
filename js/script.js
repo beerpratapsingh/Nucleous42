@@ -57,15 +57,17 @@ var n42 = {
 	    		if(listText == slectedVal){    			    			    			    			
 	    			if(mainSearch){
 	    				if($('.srch-sec a#' +listText).length < 1)
-	    				$('.srch-sec').append('<a href="javascrtip:;" class="link close-lst" id="'+listText+'">' + listText + '<span class="remove">x</span>'+'</a>');
+	    				$('.srch-sec').append('<a href="javascrtip:;" class="link close-lst" id="'+listText+'">' + listText + '<span class="remove">x</span>'+'</a>');	    				
 	    				$(".ui-autocomplete-input").val('');
+	    				var elewidth = $('.close-lst').outerWidth();	    				
+	    				$("#mainSearch").css('padding-left', elewidth+40);
 	    			}
 	    			$(this).addClass('active');
 	    		}else{
 	    			//$(this).removeClass('active');
 	    		}
 	    	});
-	    });
+	    }).change();
 	    
 	    $(".locationSrchVal li  a, .marketSrchVal li a").on('click', function(){
 	    	$(this).removeClass('active');
@@ -77,11 +79,13 @@ var n42 = {
 	    	$('.close-lst').remove();
 	    	$('ul>li>a').removeClass('active');
 	    	$("#mainSearch").val('');
+	    	$("#mainSearch").css('padding-left', 30);
 	    });
 	    $(document).on('click', '.remove', function(){        
 	    	var currVal = $(this).parent('a').attr('id');  	    	
 	    	$('ul>li>a:contains('+currVal+')').removeClass('active');
 	    	$(this).parent('.close-lst').remove();
+	    	$("#mainSearch").css('padding-left', 30);
 	    });
 
 	    //open customize check list 

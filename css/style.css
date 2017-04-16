@@ -23,12 +23,12 @@ h6 { color: #778995; font-size: 15px; font-weight: 600;}
 .n42-bnr {background: #7b8994; color: #fff; padding-bottom: 20px;}
 .n42-bnr h1:before{content: ''; width: 34px; height: 40px; display: inline-block; background: url(../images/company-icon.png) left top no-repeat; margin-right: 10px;}
 
-.srch-sec{position: relative;}
+.srch-sec{position: relative;height: 60px;}
 .srch-sec .inpt{height: 60px; padding-left: 30px; border: none;}
 .srch-btn{width: 18px; height: 18px; background: url(../images/search-icon.png) left top no-repeat;
     border: none; outline: none; position: absolute; top: 22px; left: 20px;}
 .clear-all{position: absolute; right: 25px; top: 20px;}    
-.close-lst { position: relative; top: 0; left: 0; background: #e1f2ff; padding: 7px 15px ; border-radius: 4px; margin-right: 10px;}
+.close-lst { position: relative; top: -40px; left: 31px; background: #e1f2ff; padding: 7px 15px ; border-radius: 4px; margin-right: 10px;}
 .close-lst >span {font-weight: bold; padding-left: 7px;}
 
 .n42-locations-src { background: #f6f7f9; border-top: 1px solid #dfe4e7; border-bottom: 1px solid #dfe4e7; padding: 15px 0; margin-bottom: 15px;}    
