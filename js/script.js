@@ -12,10 +12,21 @@ $(function(){
 			$(".slide-right").val(slideEvt.value[1]);
 		}
 	});
+	
+	$('div.list-inline').slice(0,3).show();
+	$(".load-more").on('click',function(){
+		if($('div.list-inline:hidden').length>1){
+	     $('div.list-inline:hidden').slice(0,2).show();		
+		}else{
+			$(this).addClass("disabled");
+		}
+     
+
+	});
 	$(".reset-slider").on("click", function(){
 		$(".slide-left").val(leftVal);
 		$(".slide-right").val(rightVal);
-		$(".range-slider").bootstrapSlider('setValue', [leftVal, rightVal]); 
+		$(".range-slider").slider('setValue', [leftVal, rightVal]); 
 	})
 
 	$( "#location" ).autocomplete({
